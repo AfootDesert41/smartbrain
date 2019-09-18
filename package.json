@@ -8,8 +8,6 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "react-sky": "^1.1.0",
-    "react-sound": "^1.2.0",
     "react-tilt": "^0.1.4",
     "tachyons": "^4.11.1"
   },

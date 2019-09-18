@@ -7,7 +7,6 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js';
 import Rank from './components/Rank/Rank.js';
 import SignIn from './components/SignIn/SignIn.js';
 import Register from './components/Register/Register.js';
-import Sound from 'react-sound';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition.js';
 
 const initialState = {
@@ -114,8 +113,7 @@ class App extends Component {
     const { route , box , imageUrl , isSignedIn } = this.state;
     const { onRouteChange , onRouteChangeLogOut , onRouteChangeRegister ,  onInputChange , onButtonSubmit } = this;
     return(
-      <div className="App"> 
-        <Sound url="https://sndup.net/5ng4/sound.mp3" ignoreMobileRestrictions={true} playStatus={Sound.status.PLAYING} volume={30} loop={true} />
+      <div className="App">
         { route === 'signIn' 
         ? <div>
             <Navigation onRouteChangeLogOut={onRouteChangeLogOut} onRouteChangeRegister={onRouteChangeRegister} isSignedIn={this.state.isSignedIn} />
